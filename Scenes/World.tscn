@@ -1,14 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://by5pnylp2nvly"]
+[gd_scene load_steps=3 format=3 uid="uid://by5pnylp2nvly"]
 
 [ext_resource type="TileSet" uid="uid://c8j7bqsv6a24a" path="res://TileSet.tres" id="2"]
+[ext_resource type="Texture2D" uid="uid://cyrso11hcj4vq" path="res://Sprites/Player.png" id="2_vlhkl"]
 
 [node name="World" type="Node2D"]
 texture_filter = 1
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
-position = Vector2(283, 381)
 scale = Vector2(4, 4)
 tile_set = ExtResource("2")
 format = 2
-layer_0/tile_data = PackedInt32Array(262142, 1, 0, 262143, 1, 0, 196608, 1, 0, 196609, 1, 0, 196610, 1, 0, 196611, 1, 0, 196612, 1, 0, 196613, 1, 0, 196614, 1, 0, 196615, 1, 0, 196616, 1, 0, 196617, 1, 0, 196618, 1, 0, 196619, 1, 0, 196620, 1, 0, 196621, 1, 0, 262140, 1, 0, 262141, 1, 0, 262139, 1, 0)
+layer_0/tile_data = PackedInt32Array(655359, 1, 0, 589824, 1, 0, 589825, 1, 0, 589826, 1, 0, 589827, 1, 0, 589828, 1, 0, 589829, 1, 0, 589830, 1, 0, 589831, 1, 0, 589832, 1, 0, 589833, 1, 0, 589834, 1, 0, 589835, 1, 0, 589836, 1, 0, 589837, 1, 0, 589838, 1, 0, 589839, 1, 0, 589840, 1, 0, 589841, 1, 0, 589842, 1, 0)
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(592, 534)
+scale = Vector2(4, 4)
+texture = ExtResource("2_vlhkl")
