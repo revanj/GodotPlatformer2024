@@ -14,8 +14,10 @@ format = 2
 layer_0/tile_data = PackedInt32Array(655359, 1, 0, 589824, 1, 0, 589825, 1, 0, 589826, 1, 0, 589827, 1, 0, 589828, 1, 0, 589829, 1, 0, 589830, 1, 0, 589831, 1, 0, 589832, 1, 0, 589833, 1, 0, 589834, 1, 0, 589835, 1, 0, 589836, 1, 0, 589837, 1, 0, 589838, 1, 0, 589839, 1, 0, 589840, 1, 0, 589841, 1, 0, 589842, 1, 0)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(326, 423)
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-position = Vector2(592, 534)
 scale = Vector2(4, 4)
 texture = ExtResource("2_vlhkl")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
